@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#" lang="en"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":58,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"1530258c6c",applicationID:"41579662"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=ql5itzy_w1rynlu&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=ql5itzy_w1rynlu&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>The Personal MBA - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC.">
+<meta name="keywords" content="knowledge,books">
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/the-personal-mba-en">
+<meta property="og:title" content="Blinkist: Serving curious minds.">
+<meta property="og:site_name" content="Blinkist">
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC.">
+<meta property="og:image" content="https://d17pjsg7x52x9r.cloudfront.net/assets/extra/og/default_sharing_image-e4b590f31e6277c5a8bfc0d99a609a36ea4aac6f67c97081271baaabebb5dff6.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@blinkist">
+<meta name="twitter:creator" content="@blinkist">
+<meta name="twitter:title" content="Blinkist: Serving curious minds.">
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC.">
+<meta name="twitter:image" content="https://d17pjsg7x52x9r.cloudfront.net/assets/extra/og/default_sharing_image-e4b590f31e6277c5a8bfc0d99a609a36ea4aac6f67c97081271baaabebb5dff6.jpg">
+<meta name="twitter:app:id:iphone" content="id568839295">
+<meta name="twitter:app:id:ipad" content="id568839295">
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android">
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers">
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers">
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers">
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/the-personal-mba-en">
+<meta property="al:ios:url" content="blinkistapp://">
+<meta property="al:ios:app_store_id" content="568839295">
+<meta property="al:android:url" content="blinkistapp://">
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android">
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FwFTAY7k4sngwfRUXMKcesrKK5Ccvshje6i+36aLUbMXMaysdzvFU+MwXfDzRBLWayoTtg/kMFMUbBGlFOQbSA==" />
+
+<link rel="stylesheet" media="all" href="https://d17pjsg7x52x9r.cloudfront.net/assets/reader-4fbf3072d28f686cdb15dc7fc62dbb77843c9ded0fb7ba73999ad9e42e05d962.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d17pjsg7x52x9r.cloudfront.net/assets/html5-3.6-respond-1.1.0.min-0243810a1cf600c880455e9d676daab2db8f29477b00f483ff841c15f72010d0.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d17pjsg7x52x9r.cloudfront.net/assets/application-6b0e1a4c41a1214adfbbe54a389b9aa02a442e213a938abc0f346115020fd447.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d17pjsg7x52x9r.cloudfront.net/assets/internal-5719d162de78d4f5a1d63026d112440f13472ba89d28ed403f6c1a775639a39f.js" data-turbolinks-track="true"></script>
+    <script src="https://d17pjsg7x52x9r.cloudfront.net/assets/reader-decf24d9c37e3926ff50b63a6e52da123b8fde735a4e9505c8cfa8b41299fadd.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d17pjsg7x52x9r.cloudfront.net/assets/extra/stripe/icon-f4a04fb3d24756f17ffbcf214a0a6933f385ba436158810d63cca9d0dd749fb3.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+
+    <script type="text/javascript">
+      window._config_user_data = {
+        referrer_token: "a9b9b8a359cd"
+      };
+
+      window.bk_fingerprint = "37734cb8-b4ff-48c8-80d5-39d368a47762";
+    </script>
+
+
+
+
+<script type="text/javascript">
+  window._config_supported_languages = ["en"];
+</script>
+
+
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+
+  Routes.api_book_chapter_audio_path = function (book_id, chapter_id) {
+    return "/api/books/" + book_id + "/chapters/" + chapter_id + "/audio";
+  };
+
+  Routes.book_path = function (book_slug) {
+    return "/books/" + book_slug;
+  };
+
+  Routes.books_path = function (params) {
+    var baseUrl = "/nc/books"
+
+    if(params) {
+      var urlParams = []
+      for (var param in params) {
+        if (params.hasOwnProperty(param)) {
+          urlParams.push(param + "=" + encodeURI(params[param]));
+        }
+      }
+
+      if(urlParams.length > 0) {
+        baseUrl += "?" + urlParams.join("&");
+      }
+    }
+
+    return baseUrl;
+  };
+</script>
+
+
+  <div id="banner"></div>
+
+
+  <div class="page">
+
+    <main role="main">
+
+
+
+    <div class="reader__container" data-book-id="54d8953c383963000a3f0000">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="54d8955c383963000a400000">
+      <div class="reader__point-gray-icon" data-chapter-menu="0"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Learn why you don’t need an MBA to be successful in business, just some basic guidance.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="54d8958a383963000a420000">
+      <div class="reader__point-gray-icon" data-chapter-menu="1"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Business school: Not only is it extremely expensive – chances are, it won’t pay off.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="54d895a3383963000a430000">
+      <div class="reader__point-gray-icon" data-chapter-menu="2"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">The perfect business idea balances money and passion.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="54d895bb383963000a440000">
+      <div class="reader__point-gray-icon" data-chapter-menu="3"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Leveraging your investments can be rewarding, but it’s also risky.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="54d895d5383963000a450000">
+      <div class="reader__point-gray-icon" data-chapter-menu="4"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">We’ve all got needs, and a product that satisfies them will sell.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="54d895ed383963000a460000">
+      <div class="reader__point-gray-icon" data-chapter-menu="5"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">A great product deserves great marketing.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="54d89606383963000a470000">
+      <div class="reader__point-gray-icon" data-chapter-menu="6"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Even when clients are reluctant, there are ways to make a sale.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="54d8961a383963000a480000">
+      <div class="reader__point-gray-icon" data-chapter-menu="7"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">To strike a great deal, it helps to prepare.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="54d89645383963000a4a0000">
+      <div class="reader__point-gray-icon" data-chapter-menu="8"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">A good leader is a good communicator.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="54d8965e383963000a4b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu="9"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Use your day more effectively by listening to your body.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="54d89683383963000a4d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu="10"></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="54d8955c383963000a400000">
+    <h1>What’s in it for me? Learn why you don’t need an MBA to be successful in business, just some basic guidance.</h1>
+    <div class="chapter__content"><p>When it comes to business, most people think there’s an official starting line: A degree, an apprenticeship, or stumbling on the right amount of money.</p>
+<p>Wrong!</p>
+<p>You don’t <em>need an MBA</em> or a winning lottery ticket to start a successful business or improve the one you’ve got. You just need some common sense and a few basic guidelines. For example, every good businessperson knows how to negotiate, but you don’t need a whole semester to learn the key to good negotiation (Just check out blink seven).</p>
+<p>And that’s just one of the tips that’s helped <em>The Personal MBA</em> become the go-to book for anyone interested in business.</p>
+<p>In these blinks, you’ll learn</p>
+<ul>
+<li>why an MBA is a big fat waste of time and money;</li>
+<li>how to confirm if your business idea is any good; and</li>
+<li>how borrowing money can actually increase your profits.</li>
+</ul></div>
+</div><div class="chapter chapter" data-chapterno="1" data-chapterid="54d8958a383963000a420000">
+    <h1>Business school: Not only is it extremely expensive – chances are, it won’t pay off.</h1>
+    <div class="chapter__content"><p>Want to go into business, <em>but have no idea where to start?</em> Business school seems like a tempting prospect, a place where all the knowledge and contacts you need are simply handed to you – but is it <em>really</em> your ticket to success?</p>
+<p>It has to be, right? Otherwise why else would people pay so much for their MBA? Business school is <em>expensive</em>, that’s for sure – the top 15 MBA programs charge up to $53,208 per year for tuition. That’s not even including fees, loan interest or living expenses!</p>
+<p>What if we factor those into the equation, plus the opportunity cost of lost wages too? Turns out there are eight different US business schools where the cost of an MBA exceeds $300,000.</p>
+<p>“Wait,” you might think, “surely not all business schools are that pricey!” True, however, any student who holds an MBA has an average debt of $41,687 (again, without accounting for additional expenses).</p>
+<p>OK, so business school costs a lot. Is this what the educational experience is worth? Short answer: nope.</p>
+<p>In the long term, an MBA does nothing for your career. If it did, a master of business administration degree should correlate with measures of success, like an increased salary, or promotions to higher level positions. And it doesn’t.</p>
+<p>Researchers from Stanford University and the University of Washington conducted an extensive study into the matter. Analyzing 40 years’ worth of data, they found that there is no correlation between long-term career success and possessing an MBA, whether you graduated with flying colors or just scraped a passing grade.</p>
+<p>So if business school can’t make your entrepreneurial career blossom, what can? Well, you can learn a lot from experience, and from your own research online – or from books like this one.</p></div>
+</div><div class="chapter chapter" data-chapterno="2" data-chapterid="54d895a3383963000a430000">
+    <h1>The perfect business idea balances money and passion.</h1>
+    <div class="chapter__content"><p>Now that you know not to waste your money on an MBA, let’s get down to business – your business. What kind of company should you start? You might think that since the IT industry is booming right now, starting an IT business would be a smart idea. But what if you absolutely despise IT as a field?</p>
+<p>Here’s a fact that more people should know: your business won’t thrive if you do it for money alone. Even if it’ll run itself eventually, your business will still need hundreds of work hours and generous amounts of money to set up.</p>
+<p>For example, in order to afford to hire people to deal with mundane tasks like payroll and HR, you’ll need to work incredibly hard for a few years. If you’re only in it for the money, can you see yourself persevering until your company reaches that point? Probably not!</p>
+<p>But if you start a business in a field that you like, not only will you be more likely to stick with it, you’ll also be ahead on the decision-making front. If you know a certain amount about the specific market you’re entering, you’ll be able to make sound decisions, develop an attractive product <em>and </em>tackle the competition.</p>
+<p>Say you’re into team sports. This may put you in a better position to judge which products meet the needs of sportsmen, making for a <em>better </em>line of business to focus on – even if there’s more demand for IT products.</p>
+<p>On the other hand, you might feel so passionate about an idea that it impedes your judgment.</p>
+<p>Imagine a small town, where expressionist art exhibitions are understandably in no high demand. When you’re an expressionist art lover, you may be oblivious to this lack of interest and try to found a museum of Expressionism right there. Sure, this could be a highly rewarding experience, but by no stretch is it a promising business idea – a painful truth that an enthusiastic art lover might be reluctant to acknowledge.</p>
+<p>But let’s say you’re not an oblivious expressionist art fan, or a grudging IT entrepreneur. Let’s say you’ve found just the right mind-set to start your own business. The next question is – how do you actually enter the market? Underneath that there’s another question: is there a shortcut to getting all the money you need? Read on in the following blinks to find out.</p></div>
+</div><div class="chapter chapter" data-chapterno="3" data-chapterid="54d895bb383963000a440000">
+    <h1>Leveraging your investments can be rewarding, but it’s also risky.</h1>
+    <div class="chapter__content"><p>So you’ve found a great new business opportunity, but you’re short on the cash you need to pursue it. Should you just stop right there? No way. Instead, <em>leverage </em>your investment.</p>
+<p>What is leverage? Simply put, it’s any technique that <em>amplifies </em>investor profits or losses. Typically, it’s the strategy of using <em>borrowed </em>money to increase your profit potential. In this way, you can make enormous gains with very little of your own capital.</p>
+<p>Let’s say you want to make a big investment that you couldn’t afford without borrowing money: you want to buy four properties at $100,000 each, but only have $20,000 of your own capital. If you borrow $380,000 and the properties double in value, you’ll have made $400,000 with just $20,000 of your own capital. That’s a 20-times return on your investment!</p>
+<p>But if the idea that borrowing more always means earning more seems a little too good to be true, well, you’re right. Leverage can be risky because it also amplifies your <em>losses. </em></p>
+<p>Let’s return to our example: imagine that the properties you bought lost half their value – your losses would amount to $200,000. That’s right, you’d lose <em>ten times </em>your own capital resources.</p>
+<p>For a real life example of this, you need only look to the catastrophic recession of 2008, which was caused in part by the enormous amount of leverage used by investment banks, who were caught with catastrophic losses when the property bubble popped. The lesson? Leverage can be great, but you’ve got to watch out.</p></div>
+</div><div class="chapter chapter" data-chapterno="4" data-chapterid="54d895d5383963000a450000">
+    <h1>We’ve all got needs, and a product that satisfies them will sell.</h1>
+    <div class="chapter__content"><p>Many think that for a product to sell, it just has to be good – not true. Consider this: People will only want something if it fulfills their <em>needs</em>. Let’s put it this way – a vampire won’t pay to use your state-of-the-art solarium (unless you’ve allowed him to use it to trap unsuspecting customers!)</p>
+<p>All our decisions are influenced by our basic needs, including our <em>buying decisions</em>. Imagine selling a bottle of stale water to a hiker lost in a desert. He’d be willing to pay just about anything for that lousy bottle, just because it responds to his <em>predominant need</em>. The lesson here? Find your own desperate hiker.</p>
+<p>Any successful business fulfills one or more of its customers’ needs, and Harvard professors Nitin Nohria and Paul Lawrence asserted that there are four needs or <em>drives </em>that are common to all humans.</p>
+<p>The first of these is the desire to acquire and collect things, whether it’s stamps, shares or social status. Retailers and investment brokerages are the businesses that cater to this.</p>
+<p>Secondly, we have the drive to bond with other people, so we can feel valued and loved. Businesses such as dating services and companies that promise to make us more desirable (perfumeries, beauty salons) are the ones that meet this drive.</p>
+<p>Thirdly, we want to learn and satisfy our curiosity. Why else would you be reading these blinks right now? It goes without saying that Blinkist is one of the services that fulfills that need.</p>
+<p>Finally, we strive to defend ourselves, our loved ones and our property, which is where security firms and companies selling alarms come in.</p>
+<p>Consider your business idea in the light of each of these drives. Which of these four drives could your business cater to?</p></div>
+</div><div class="chapter chapter" data-chapterno="5" data-chapterid="54d895ed383963000a460000">
+    <h1>A great product deserves great marketing.</h1>
+    <div class="chapter__content"><p>Say your product meets not just one, but <em>three </em>of your customers’ basic needs. It’s ready to deliver! Now, where are all those clients who should be drooling over it?</p>
+<p>Well, you’ll need to get their attention first. But in this age of social media and information overload, this is no easy task. If you want customers to pay attention, you’ll need to offer something remarkable <em>and</em> memorable.</p>
+<p>And if we want to do this, we’ve got to think about the <em>way </em>we deliver our message to clients – the medium matters. For example, if the form of your message makes a customer think it’s made just for her, you’re far more likely to get her attention.</p>
+<p>Show your customer that you’ve made the extra effort, even if it’s just with a hand-addressed FedEx envelope. Sure, this can be expensive, but it’s worthwhile to inform selected prospective clients in a high-quality way – certainly better than spamming an entire town’s inboxes with irritating emails.</p>
+<p>If you want to market your product effectively, there’s another crucial aspect you should consider: the product’s <em>end result</em>. Think about it: people don’t buy a product for its own sake. They buy it because of the end result they’re hoping to attain. For example, a woman won’t pay $20 for a lipstick simply because the color is nice. She buys it because she hopes it will make her more desirable.</p>
+<p>A great way to highlight your product’s end result is through <em>testimonials,</em> in a statement made by an ordinary person who overcame adversity, all thanks to your product. Say you’re selling an acne cream – your testimonial could be from a pimply teenager who thought he was doomed to be an outcast until your product cleared his skin right up. That’s the sort of story that’s going to draw your customers in.</p></div>
+</div><div class="chapter chapter" data-chapterno="6" data-chapterid="54d89606383963000a470000">
+    <h1>Even when clients are reluctant, there are ways to make a sale.</h1>
+    <div class="chapter__content"><p>Picture this: you’re visiting a pet store and see a puppy that you’re absolutely smitten with. But you’re unsure whether you want to buy it. The owner makes an offer to you to take the dog home for a week and guess what? It works its charms and you can’t imagine returning it once the week is over.</p>
+<p>This is an example of how a sales expert can convince a reluctant prospect to become a customer. But how, exactly?</p>
+<p>You can increase sales if you account for your clients’ fears. We all hate to make a bad choice, and this makes us cautious customers. Instead of buying the wrong thing, we’d rather buy nothing at all – right? In sales theory, this is called a <em>major barrier to purchase</em>. Naturally, it’s something salespersons hate.</p>
+<p>To encourage prospects to buy something, salespersons shoulder the risk of a bad transaction – by allowing the customer to return that cute puppy if things don’t work out. This strategy works for non-adorable items, too. For example, it’s often possible to try out a bed for an entire year, <em>and </em>return it for a full refund. This makes people more likely to purchase a bed.</p>
+<p>So if you can find out <em>why</em> your customers might say no, you’ll be able to talk them into a “yes.” In sales, reasons for saying no are called <em>standard objections</em>, and there are several of these. A customer might fear the product costs too much, or it won’t provide the promised benefits, or that he doesn’t need the product yet, and so on.</p>
+<p>If you know why your client won’t buy, you can devise an argumentative strategy and basically convince him that he’s dead wrong. Say he thinks his old laptop will have to do for a while longer. You can convince him that his old laptop is incompatible with essential new software.</p></div>
+</div><div class="chapter chapter" data-chapterno="7" data-chapterid="54d8961a383963000a480000">
+    <h1>To strike a great deal, it helps to prepare.</h1>
+    <div class="chapter__content"><p>How do you picture a negotiation? You might see yourself sitting at a conference table and discussing a deal, but don’t get ahead of yourself! This is just the <em>last </em>phase of a negotiation. A good negotiation actually occurs in several stages.</p>
+<p>The first part of negotiation is <em>setting the stage</em>. Long before you start exchanging offers with your business partners, you can optimize your outlook in the early decisions you make. You could make sure you’re negotiating with the right person, for example: did the company send someone with real decision-making authority? Or just someone who’s been assigned to collect information for those in power?</p>
+<p>You can also create a conducive environment by choosing the setting you’re most convincing in. Will you present your offer in person, over the phone or should you organize an online meeting? An elegant office could make a great impression, but maybe your voice is a lot more confident over the phone. If you’re having trouble deciding, research data in your industry or market may prove very helpful.</p>
+<p>Once you’ve prepared, decide on the <em>terms </em>of your proposal. Consider how attractive your offers will be to the other party, and in every case, search for ways to make the offer even more desirable. You could even try to find out the other party’s offers. Then you can work out a way to make yours seem superior.</p>
+<p>You’ve always got to consider the worst-case scenario, so anticipate possible objections and create an argumentative strategy to defuse or counter them. And, in case they don’t work, decide on the concessions and compromises that you’re willing to accept.</p>
+<p>The final stage of negotiation is the actual discussion. Because of the effort you put in during the first two stages, you’ll be far better prepared. In fact, most of the hard work at this point is already over!</p></div>
+</div><div class="chapter chapter" data-chapterno="8" data-chapterid="54d89645383963000a4a0000">
+    <h1>A good leader is a good communicator.</h1>
+    <div class="chapter__content"><p>Ever had a plan that seemed great until you tried to put it into action? Some bosses have great schemes they just can’t implement. Are they unlucky with their employees? Or is it possible they just don’t know how to communicate with them?</p>
+<p>Here’s what they don’t know: If you want others to do something, you should tell them <em>why </em>you want them to do it. Harvard psychologist Ellen Langer demonstrated this in a study where her students asked others queuing in front of a Xerox to let them go first. 60 percent of the people agreed, but when a reason for the request was provided, an impressive 95 percent complied.</p>
+<p>Moreover, if you tell people about your intentions, everyone can work in ways that support that plan, and know what to do if the situation changes. This way, you won’t have to micromanage every step.</p>
+<p>Imagine a general telling his field commander to capture a hill, but the situation changes and capturing the hill becomes strategically futile – the field commander will know how to react if he knows the larger goal is to flank the enemy.</p>
+<p>There’s another way to boost your communication, and it’s very simple: stop putting others down. Yet it’s surprising how often we find ourselves dismissing our coworkers’ comments. It might make you feel superior but it gets you nowhere, causing your partner to withdraw from the conversation, even if you don’t notice it.</p>
+<p>People can also become defensive and try to save face rather than understand your comments. Think about it: how engaged and cooperative would you be in a conversation with your boss after he said: “This is the silliest idea I’ve ever heard of.”</p>
+<p>By contrast, effective communication sees both partners actively and comfortably exchanging ideas in a dialogue that could strengthen the entire organization.</p></div>
+</div><div class="chapter chapter" data-chapterno="9" data-chapterid="54d8965e383963000a4b0000">
+    <h1>Use your day more effectively by listening to your body.</h1>
+    <div class="chapter__content"><p>Sure, it’s no fun to be unproductive, but being too busy can harm you and your work too. The best way to be productive is, in fact, through setting limits.</p>
+<p>If you have several things to do at once, your performance can be reduced across all of them. Your brain can only handle so much. Think of it like juggling: the more balls you’re trying to juggle at once, the more likely you are to drop them all.</p>
+<p>Moreover, with every task come unexpected demands that take extra time and effort to deal with. If your schedule doesn’t allow for extra time, you won’t be able to cope with those demands, especially if they’re coming from several tasks at once.</p>
+<p>So how can we stay in tune with what we can handle? Your best bet is to listen to the natural fluctuations of your energy. We’re not talking about a far-fetched, new age concept here – it’s simply that your productivity isn’t distributed evenly throughout the day. Instead, your body has a natural rhythm. Sometimes you can feel highly alert and productive. At other times, you’re far too tired to get anything done at all.</p>
+<p>Though it varies from person to person, most people are more productive in the morning than around noon. We also know that energy cycles in 90-minute-spans. So within that one-and-a-half-hour frame your energy will both rise and fall.</p>
+<p>If you’re aware of these natural fluctuations, you can take advantage of the times when you feel energized. And more importantly, you can recognize when you’re crashing and take a well-needed break.</p></div>
+</div><div class="chapter chapter" data-chapterno="10" data-chapterid="54d89683383963000a4d0000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>If you want a thriving business, your product should cater to the core needs of your customers. By communicating confidently and cleverly, you can convince your clients to buy, your employees to cooperate and your business partners to sign your deal. </strong></p>
+<p>Actionable advice:</p>
+<p><strong>Actions speak louder than words. </strong></p>
+<p>The next time you have to hire a new employee, don’t go for the applicants who performed best in an interview. Instead, do some extra research and find out how an applicant has performed in past months or years. Past performance is the best predictor of future performance.</p>
+<p><strong>Suggested</strong> <strong>further</strong> <strong>reading: </strong><strong><em>The $100 Startup </em></strong><strong>by Chris Guillebeau</strong></p>
+<p><em>The $100 Startup</em> is a guide for people who want to leave their nine-to-five jobs to start their own business. Drawing from case studies of 50 entrepreneurs who have started microbusinesses with $100 or less, Guillebeau gives advice and tools on how to successfully define and sell a product, as well as how to grow your business from there.</p>
+<p><strong>Got feedback?</strong></p>
+<p>We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#">Previous blink</a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#">Next blink</a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/the-personal-mba-en/rating" data-library-url="/en/nc/library">
+                        <a class="reader__finish-icon button" href="#">
+                <div class="reader__finish-icon-body">
+                    Mark as finished
+                </div>
+</a>
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The Personal MBA" href="/en/share/highlights/0"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The Personal MBA" href="/en/share/highlights/0"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The Personal MBA" href="/en/share/highlights/0"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class='reader__overlay'></div>
+
+  <div class="reader__daily-final">
+    <div class="daily-final">
+  <div class="daily-final__container">
+    <div class="daily-final__header">
+      <div class="header-blank">
+        <div class="header-blank__logo">
+        </div>
+      </div>
+    </div>
+    <div class="daily-final__body">
+      <div class="daily-final__title">
+        Woohoo! You read it!
+      </div>
+
+      <div class="daily-final__content">
+        <div class="daily-final__subtitle">
+          If you enjoyed this, why not read more?
+        </div>
+
+        <div class="daily-final__list">
+          <div class="daily-final__list-item daily-final__list-item--library">
+            <span>Get unlimited access to the Blinkist library</span>
+          </div>
+          <div class="daily-final__list-item daily-final__list-item--audio">
+            <span>Listen to audio versions &amp; learn on the go</span>
+          </div>
+          <div class="daily-final__list-item daily-final__list-item--offline">
+            <span>Read &amp; listen to the library offline</span>
+          </div>
+          <div class="daily-final__list-item daily-final__list-item--highlight">
+            <span>Highlight &amp; save important snippets</span>
+          </div>
+        </div>
+        <a class="daily-final__button button button--wide" href="/en/nc/plans">Upgrade to Premium</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="the-personal-mba-en" data-id="54d8953c383963000a3f0000">
+</div>
+
+
+<div class="reader__container_bottom_bar">
+  <div id="reader__bottom_bar-v2"></div>
+</div>
+
+
+<script src="https://d17pjsg7x52x9r.cloudfront.net/packs/js/reader-f65902ff04b839475eee.js" defer="defer"></script>
+<link rel="stylesheet" media="screen" href="https://d17pjsg7x52x9r.cloudfront.net/packs/css/reader-4f0b49b6.css" />
+
+
+    <form id="metadata" action="/api/library/54d8953c383963000a3f0000?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="54d895bb383963000a440000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="54d895bb383963000a440000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="54d8953c383963000a3f0000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647cf9e4b08bcecce09447" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+<div style="display: none;" data-modal="auth-popup" data-modal-piwik-event-category="popup-20180814-signup_popup" data-modal-piwik-event-action="1-shown">
+
+  <div data-modal-step="login">
+    <div class="auth-popup-form auth-popup-form--login js-input-mobile-container">
+  <div class="auth-popup-form__container js-input-mobile-container">
+
+    <div class="auth-popup-form__header">
+      <h3 class="auth-popup-form__headline">
+        Log in to Blinkist
+      </h3>
+    </div>
+
+    <div class="auth-popup-form__body auth-form auth-form--login">
+      <form class="form auth-form__form js-popup-login-form" action="/en/nc/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="UmWjcnlqKjQbuk352YucuVdFSZUquxvHyKUJrs5YKexSVVzfgLUNrhhL5F12DRIV9qVxs7nh4/enYabUfDdjFw==" />
+
+        <input type="hidden" name="login[facebook_access_token]" id="login-popup_login_facebook_access_token" />
+        <input value="" type="hidden" name="login[book_to_add]" id="login-popup_login_book_to_add" />
+        <input class="js-google-id-token" type="hidden" name="login[google_id_token]" id="login-popup_login_google_id_token" />
+        <input type="hidden" name="last_page_before_login" id="last_page_before_login" />
+        <input type="hidden" name="next_action_after_login" id="next_action_after_login" value="" />
+
+        <div class="auth-form__social-logins">
+          <div class="auth-form__social-logins-row">
+            <a class="social-button social-button--facebook" data-action="facebook-login" data-action-url="#login-popup_login_facebook_access_token" href="#">
+              <span class="social-button__sprite">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="18" class="sprite sprite--auth-form sprite--facebook"><defs><path id="a" d="M4.667 18h4.666V0H0v18z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path d="M6.058 18V9.79H8.81l.412-3.2H6.058V4.547c0-.927.257-1.558 1.583-1.558l1.692-.001V.126A22.608 22.608 0 0 0 6.868 0c-2.44 0-4.11 1.491-4.11 4.23v2.36H0v3.2h2.759V18h3.3z" fill="#FEFEFE" mask="url(#b)"></path></g></svg>
+
+              </span>
+              <span class="social-button__label">
+                Log in
+              </span>
+</a>
+            <a href="#" class="social-button social-button--google js-google-signin">
+              <span class="social-button__sprite">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="sprite sprite--auth-form sprite--google"><g fill="none" fill-rule="evenodd"><path d="M17.64 9.205c0-.639-.057-1.252-.164-1.841H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"></path><path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"></path><path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"></path><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"></path></g></svg>
+
+              </span>
+              <span class="social-button__label">
+                Log in
+              </span>
+            </a>
+          </div>
+
+          <div class="auth-form__social-logins-row">
+            <a href="/en/nc/apple_login" class="social-button social-button--apple">
+              <span class="social-button__label">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="16" viewBox="0 0 150 16" fill="none" class="sprite sprite--auth-form sprite--continue_with_apple_en">
+<path d="M9.23269 4.208C9.14735 3.87733 9.03002 3.57333 8.88069 3.296C8.73135 3.01867 8.53935 2.77867 8.30469 2.576C8.07002 2.37333 7.79269 2.21867 7.47269 2.112C7.16335 1.99467 6.80069 1.936 6.38469 1.936C5.77669 1.936 5.24869 2.05867 4.80069 2.304C4.36335 2.54933 4.00602 2.88 3.72869 3.296C3.45135 3.70133 3.24335 4.16533 3.10469 4.688C2.97669 5.21067 2.91269 5.744 2.91269 6.288C2.91269 6.832 2.97669 7.36533 3.10469 7.888C3.24335 8.41067 3.45135 8.88 3.72869 9.296C4.00602 9.70133 4.36335 10.0267 4.80069 10.272C5.24869 10.5173 5.77669 10.64 6.38469 10.64C6.83269 10.64 7.22735 10.5653 7.56869 10.416C7.91002 10.256 8.20335 10.0427 8.44869 9.776C8.69402 9.49867 8.88602 9.17867 9.02469 8.816C9.16335 8.45333 9.25402 8.064 9.29669 7.648H11.2487C11.206 8.33067 11.0567 8.95467 10.8007 9.52C10.5554 10.0853 10.2194 10.576 9.79269 10.992C9.36602 11.3973 8.86469 11.712 8.28869 11.936C7.71269 12.16 7.07802 12.272 6.38469 12.272C5.53135 12.272 4.76335 12.1173 4.08069 11.808C3.40869 11.488 2.83802 11.056 2.36869 10.512C1.89935 9.968 1.53669 9.33333 1.28069 8.608C1.03535 7.88267 0.912688 7.10933 0.912688 6.288C0.912688 5.47733 1.03535 4.70933 1.28069 3.984C1.53669 3.25867 1.89935 2.624 2.36869 2.08C2.83802 1.536 3.40869 1.104 4.08069 0.783999C4.76335 0.464 5.53135 0.304 6.38469 0.304C7.02469 0.304 7.62735 0.394666 8.19269 0.575999C8.75802 0.746666 9.25402 1.00267 9.68069 1.344C10.118 1.67467 10.47 2.08 10.7367 2.56C11.0034 3.04 11.1687 3.58933 11.2327 4.208H9.23269ZM16.6036 12.224C15.9422 12.224 15.3502 12.1173 14.8276 11.904C14.3156 11.68 13.8782 11.376 13.5156 10.992C13.1636 10.608 12.8916 10.1493 12.6996 9.616C12.5182 9.08267 12.4276 8.496 12.4276 7.856C12.4276 7.22667 12.5182 6.64533 12.6996 6.112C12.8916 5.57867 13.1636 5.12 13.5156 4.736C13.8782 4.352 14.3156 4.05333 14.8276 3.84C15.3502 3.616 15.9422 3.504 16.6036 3.504C17.2649 3.504 17.8516 3.616 18.3636 3.84C18.8862 4.05333 19.3236 4.352 19.6756 4.736C20.0382 5.12 20.3102 5.57867 20.4916 6.112C20.6836 6.64533 20.7796 7.22667 20.7796 7.856C20.7796 8.496 20.6836 9.08267 20.4916 9.616C20.3102 10.1493 20.0382 10.608 19.6756 10.992C19.3236 11.376 18.8862 11.68 18.3636 11.904C17.8516 12.1173 17.2649 12.224 16.6036 12.224ZM16.6036 10.784C17.0089 10.784 17.3609 10.6987 17.6596 10.528C17.9582 10.3573 18.2036 10.1333 18.3956 9.856C18.5876 9.57867 18.7262 9.26933 18.8116 8.928C18.9076 8.576 18.9556 8.21867 18.9556 7.856C18.9556 7.504 18.9076 7.152 18.8116 6.8C18.7262 6.448 18.5876 6.13867 18.3956 5.872C18.2036 5.59467 17.9582 5.37067 17.6596 5.2C17.3609 5.02933 17.0089 4.944 16.6036 4.944C16.1982 4.944 15.8462 5.02933 15.5476 5.2C15.2489 5.37067 15.0036 5.59467 14.8116 5.872C14.6196 6.13867 14.4756 6.448 14.3796 6.8C14.2942 7.152 14.2516 7.504 14.2516 7.856C14.2516 8.21867 14.2942 8.576 14.3796 8.928C14.4756 9.26933 14.6196 9.57867 14.8116 9.856C15.0036 10.1333 15.2489 10.3573 15.5476 10.528C15.8462 10.6987 16.1982 10.784 16.6036 10.784ZM22.2959 3.728H24.0239V4.944L24.0559 4.976C24.3333 4.51733 24.6959 4.16 25.1439 3.904C25.5919 3.63733 26.0879 3.504 26.6319 3.504C27.5386 3.504 28.2533 3.73867 28.7759 4.208C29.2986 4.67733 29.5599 5.38133 29.5599 6.32V12H27.7359V6.8C27.7146 6.14933 27.5759 5.68 27.3199 5.392C27.0639 5.09333 26.6639 4.944 26.1199 4.944C25.8106 4.944 25.5333 5.00267 25.2879 5.12C25.0426 5.22667 24.8346 5.38133 24.6639 5.584C24.4933 5.776 24.3599 6.00533 24.2639 6.272C24.1679 6.53867 24.1199 6.82133 24.1199 7.12V12H22.2959V3.728ZM30.6514 3.728H32.0274V1.248H33.8514V3.728H35.4994V5.088H33.8514V9.504C33.8514 9.696 33.8568 9.86133 33.8674 10C33.8888 10.1387 33.9261 10.256 33.9794 10.352C34.0434 10.448 34.1341 10.5227 34.2514 10.576C34.3688 10.6187 34.5288 10.64 34.7314 10.64C34.8594 10.64 34.9874 10.64 35.1154 10.64C35.2434 10.6293 35.3714 10.608 35.4994 10.576V11.984C35.2968 12.0053 35.0994 12.0267 34.9074 12.048C34.7154 12.0693 34.5181 12.08 34.3154 12.08C33.8354 12.08 33.4461 12.0373 33.1474 11.952C32.8594 11.856 32.6301 11.7227 32.4594 11.552C32.2994 11.3707 32.1874 11.1467 32.1234 10.88C32.0701 10.6133 32.0381 10.3093 32.0274 9.968V5.088H30.6514V3.728ZM36.8596 0.575999H38.6836V2.304H36.8596V0.575999ZM36.8596 3.728H38.6836V12H36.8596V3.728ZM40.6709 3.728H42.3989V4.944L42.4309 4.976C42.7083 4.51733 43.0709 4.16 43.5189 3.904C43.9669 3.63733 44.4629 3.504 45.0069 3.504C45.9136 3.504 46.6283 3.73867 47.1509 4.208C47.6736 4.67733 47.9349 5.38133 47.9349 6.32V12H46.1109V6.8C46.0896 6.14933 45.9509 5.68 45.6949 5.392C45.4389 5.09333 45.0389 4.944 44.4949 4.944C44.1856 4.944 43.9083 5.00267 43.6629 5.12C43.4176 5.22667 43.2096 5.38133 43.0389 5.584C42.8683 5.776 42.7349 6.00533 42.6389 6.272C42.5429 6.53867 42.4949 6.82133 42.4949 7.12V12H40.6709V3.728ZM57.1224 12H55.3304V10.848H55.2984C55.0744 11.264 54.7384 11.6 54.2904 11.856C53.8531 12.1013 53.4051 12.224 52.9464 12.224C51.8584 12.224 51.0691 11.9573 50.5784 11.424C50.0984 10.88 49.8584 10.064 49.8584 8.976V3.728H51.6824V8.8C51.6824 9.52533 51.8211 10.0373 52.0984 10.336C52.3758 10.6347 52.7651 10.784 53.2664 10.784C53.6504 10.784 53.9704 10.7253 54.2264 10.608C54.4824 10.4907 54.6904 10.336 54.8504 10.144C55.0104 9.94133 55.1224 9.70133 55.1864 9.424C55.2611 9.14667 55.2984 8.848 55.2984 8.528V3.728H57.1224V12ZM64.7259 7.136C64.7046 6.848 64.6406 6.57067 64.5339 6.304C64.4379 6.03733 64.2993 5.808 64.1179 5.616C63.9473 5.41333 63.7339 5.25333 63.4779 5.136C63.2326 5.008 62.9553 4.944 62.6459 4.944C62.3259 4.944 62.0326 5.00267 61.7659 5.12C61.5099 5.22667 61.2859 5.38133 61.0939 5.584C60.9126 5.776 60.7633 6.00533 60.6459 6.272C60.5393 6.53867 60.4806 6.82667 60.4699 7.136H64.7259ZM60.4699 8.336C60.4699 8.656 60.5126 8.96533 60.5979 9.264C60.6939 9.56267 60.8326 9.824 61.0139 10.048C61.1953 10.272 61.4246 10.4533 61.7019 10.592C61.9793 10.72 62.3099 10.784 62.6939 10.784C63.2273 10.784 63.6539 10.672 63.9739 10.448C64.3046 10.2133 64.5499 9.86667 64.7099 9.408H66.4379C66.3419 9.856 66.1766 10.256 65.9419 10.608C65.7073 10.96 65.4246 11.2587 65.0939 11.504C64.7633 11.7387 64.3899 11.9147 63.9739 12.032C63.5686 12.16 63.1419 12.224 62.6939 12.224C62.0433 12.224 61.4673 12.1173 60.9659 11.904C60.4646 11.6907 60.0379 11.392 59.6859 11.008C59.3446 10.624 59.0833 10.1653 58.9019 9.632C58.7313 9.09867 58.6459 8.512 58.6459 7.872C58.6459 7.28533 58.7366 6.73067 58.9179 6.208C59.1099 5.67467 59.3766 5.21067 59.7179 4.816C60.0699 4.41067 60.4913 4.09067 60.9819 3.856C61.4726 3.62133 62.0273 3.504 62.6459 3.504C63.2966 3.504 63.8779 3.64267 64.3899 3.92C64.9126 4.18667 65.3446 4.544 65.6859 4.992C66.0273 5.44 66.2726 5.95733 66.4219 6.544C66.5819 7.12 66.6246 7.71733 66.5499 8.336H60.4699ZM71.6377 3.728H73.5737L75.1897 9.904H75.2217L76.7737 3.728H78.6137L80.1017 9.904H80.1337L81.8137 3.728H83.6697L81.0777 12H79.2057L77.6697 5.856H77.6377L76.1177 12H74.1977L71.6377 3.728ZM84.8908 0.575999H86.7148V2.304H84.8908V0.575999ZM84.8908 3.728H86.7148V12H84.8908V3.728ZM87.8702 3.728H89.2462V1.248H91.0702V3.728H92.7182V5.088H91.0702V9.504C91.0702 9.696 91.0755 9.86133 91.0862 10C91.1075 10.1387 91.1449 10.256 91.1982 10.352C91.2622 10.448 91.3529 10.5227 91.4702 10.576C91.5875 10.6187 91.7475 10.64 91.9502 10.64C92.0782 10.64 92.2062 10.64 92.3342 10.64C92.4622 10.6293 92.5902 10.608 92.7182 10.576V11.984C92.5155 12.0053 92.3182 12.0267 92.1262 12.048C91.9342 12.0693 91.7369 12.08 91.5342 12.08C91.0542 12.08 90.6649 12.0373 90.3662 11.952C90.0782 11.856 89.8489 11.7227 89.6782 11.552C89.5182 11.3707 89.4062 11.1467 89.3422 10.88C89.2889 10.6133 89.2569 10.3093 89.2462 9.968V5.088H87.8702V3.728ZM94.0303 0.575999H95.8543V4.816H95.8863C96.1103 4.44267 96.441 4.13333 96.8783 3.888C97.3263 3.632 97.8223 3.504 98.3663 3.504C99.273 3.504 99.9876 3.73867 100.51 4.208C101.033 4.67733 101.294 5.38133 101.294 6.32V12H99.4703V6.8C99.449 6.14933 99.3103 5.68 99.0543 5.392C98.7983 5.09333 98.3983 4.944 97.8543 4.944C97.545 4.944 97.2676 5.00267 97.0223 5.12C96.777 5.22667 96.569 5.38133 96.3983 5.584C96.2276 5.776 96.0943 6.00533 95.9983 6.272C95.9023 6.53867 95.8543 6.82133 95.8543 7.12V12H94.0303V0.575999ZM110.983 0.575999H113.111L117.511 12H115.367L114.295 8.976H109.735L108.663 12H106.599L110.983 0.575999ZM110.279 7.456H113.767L112.055 2.544H112.007L110.279 7.456ZM118.391 3.728H120.119V4.848H120.151C120.407 4.368 120.764 4.02667 121.223 3.824C121.681 3.61067 122.177 3.504 122.711 3.504C123.361 3.504 123.927 3.62133 124.407 3.856C124.897 4.08 125.303 4.39467 125.623 4.8C125.943 5.19467 126.183 5.65867 126.343 6.192C126.503 6.72533 126.583 7.296 126.583 7.904C126.583 8.45867 126.508 8.99733 126.359 9.52C126.22 10.0427 126.001 10.5067 125.703 10.912C125.415 11.3067 125.047 11.6267 124.599 11.872C124.151 12.1067 123.623 12.224 123.015 12.224C122.748 12.224 122.481 12.1973 122.215 12.144C121.948 12.1013 121.692 12.0267 121.447 11.92C121.201 11.8133 120.972 11.68 120.759 11.52C120.556 11.3493 120.385 11.152 120.247 10.928H120.215V15.056H118.391V3.728ZM124.759 7.872C124.759 7.49867 124.711 7.136 124.615 6.784C124.519 6.432 124.375 6.12267 124.183 5.856C123.991 5.57867 123.751 5.36 123.463 5.2C123.175 5.02933 122.844 4.944 122.471 4.944C121.703 4.944 121.121 5.21067 120.727 5.744C120.343 6.27733 120.151 6.98667 120.151 7.872C120.151 8.288 120.199 8.67733 120.295 9.04C120.401 9.392 120.556 9.696 120.759 9.952C120.961 10.208 121.201 10.4107 121.479 10.56C121.767 10.7093 122.097 10.784 122.471 10.784C122.887 10.784 123.239 10.6987 123.527 10.528C123.815 10.3573 124.049 10.1387 124.231 9.872C124.423 9.59467 124.556 9.28533 124.631 8.944C124.716 8.592 124.759 8.23467 124.759 7.872ZM128.172 3.728H129.9V4.848H129.932C130.188 4.368 130.545 4.02667 131.004 3.824C131.463 3.61067 131.959 3.504 132.492 3.504C133.143 3.504 133.708 3.62133 134.188 3.856C134.679 4.08 135.084 4.39467 135.404 4.8C135.724 5.19467 135.964 5.65867 136.124 6.192C136.284 6.72533 136.364 7.296 136.364 7.904C136.364 8.45867 136.289 8.99733 136.14 9.52C136.001 10.0427 135.783 10.5067 135.484 10.912C135.196 11.3067 134.828 11.6267 134.38 11.872C133.932 12.1067 133.404 12.224 132.796 12.224C132.529 12.224 132.263 12.1973 131.996 12.144C131.729 12.1013 131.473 12.0267 131.228 11.92C130.983 11.8133 130.753 11.68 130.54 11.52C130.337 11.3493 130.167 11.152 130.028 10.928H129.996V15.056H128.172V3.728ZM134.54 7.872C134.54 7.49867 134.492 7.136 134.396 6.784C134.3 6.432 134.156 6.12267 133.964 5.856C133.772 5.57867 133.532 5.36 133.244 5.2C132.956 5.02933 132.625 4.944 132.252 4.944C131.484 4.944 130.903 5.21067 130.508 5.744C130.124 6.27733 129.932 6.98667 129.932 7.872C129.932 8.288 129.98 8.67733 130.076 9.04C130.183 9.392 130.337 9.696 130.54 9.952C130.743 10.208 130.983 10.4107 131.26 10.56C131.548 10.7093 131.879 10.784 132.252 10.784C132.668 10.784 133.02 10.6987 133.308 10.528C133.596 10.3573 133.831 10.1387 134.012 9.872C134.204 9.59467 134.337 9.28533 134.412 8.944C134.497 8.592 134.54 8.23467 134.54 7.872ZM137.953 0.575999H139.777V12H137.953V0.575999ZM147.445 7.136C147.423 6.848 147.359 6.57067 147.253 6.304C147.157 6.03733 147.018 5.808 146.837 5.616C146.666 5.41333 146.453 5.25333 146.197 5.136C145.951 5.008 145.674 4.944 145.365 4.944C145.045 4.944 144.751 5.00267 144.485 5.12C144.229 5.22667 144.005 5.38133 143.813 5.584C143.631 5.776 143.482 6.00533 143.365 6.272C143.258 6.53867 143.199 6.82667 143.189 7.136H147.445ZM143.189 8.336C143.189 8.656 143.231 8.96533 143.317 9.264C143.413 9.56267 143.551 9.824 143.733 10.048C143.914 10.272 144.143 10.4533 144.421 10.592C144.698 10.72 145.029 10.784 145.413 10.784C145.946 10.784 146.373 10.672 146.693 10.448C147.023 10.2133 147.269 9.86667 147.429 9.408H149.157C149.061 9.856 148.895 10.256 148.661 10.608C148.426 10.96 148.143 11.2587 147.813 11.504C147.482 11.7387 147.109 11.9147 146.693 12.032C146.287 12.16 145.861 12.224 145.413 12.224C144.762 12.224 144.186 12.1173 143.685 11.904C143.183 11.6907 142.757 11.392 142.405 11.008C142.063 10.624 141.802 10.1653 141.621 9.632C141.45 9.09867 141.365 8.512 141.365 7.872C141.365 7.28533 141.455 6.73067 141.637 6.208C141.829 5.67467 142.095 5.21067 142.437 4.816C142.789 4.41067 143.21 4.09067 143.701 3.856C144.191 3.62133 144.746 3.504 145.365 3.504C146.015 3.504 146.597 3.64267 147.109 3.92C147.631 4.18667 148.063 4.544 148.405 4.992C148.746 5.44 148.991 5.95733 149.141 6.544C149.301 7.12 149.343 7.71733 149.269 8.336H143.189Z" fill="black"></path>
+</svg>
+
+
+                <span class="social-button__sprite">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none" class="sprite sprite--auth-form sprite--apple">
+<path d="M13.7066 12.4689C13.4552 13.0279 13.1577 13.5424 12.813 14.0155C12.3431 14.6604 11.9584 15.1068 11.6619 15.3547C11.2023 15.7616 10.7098 15.97 10.1825 15.9818C9.8039 15.9818 9.34735 15.8781 8.81592 15.6678C8.28273 15.4584 7.79275 15.3547 7.34472 15.3547C6.87484 15.3547 6.37089 15.4584 5.83186 15.6678C5.29201 15.8781 4.85712 15.9878 4.52461 15.9986C4.01892 16.0194 3.51488 15.8051 3.01175 15.3547C2.69063 15.0851 2.28898 14.6229 1.80781 13.9681C1.29156 13.2688 0.867126 12.458 0.534618 11.5336C0.178514 10.5351 0 9.5682 0 8.63213C0 7.55987 0.240686 6.63506 0.722776 5.86007C1.10166 5.23757 1.6057 4.74652 2.23655 4.38604C2.8674 4.02556 3.54904 3.84186 4.2831 3.83011C4.68476 3.83011 5.21148 3.94971 5.86603 4.18476C6.51873 4.42061 6.93783 4.54021 7.12157 4.54021C7.25895 4.54021 7.72452 4.40036 8.51378 4.12155C9.26015 3.86299 9.89008 3.75594 10.4061 3.79811C11.8045 3.90675 12.8551 4.4374 13.5537 5.39342C12.3031 6.12288 11.6845 7.14457 11.6968 8.45525C11.708 9.47616 12.0928 10.3257 12.8489 11.0003C13.1916 11.3133 13.5742 11.5553 14 11.7272C13.9077 11.9849 13.8102 12.2318 13.7066 12.4689ZM10.4995 0.320089C10.4995 1.12027 10.1958 1.8674 9.5905 2.55893C8.86003 3.38103 7.97649 3.85608 7.01836 3.78112C7.00616 3.68512 6.99908 3.58409 6.99908 3.47792C6.99908 2.70974 7.34646 1.88765 7.96336 1.21547C8.27135 0.875134 8.66305 0.59215 9.13806 0.366409C9.61205 0.144035 10.0604 0.0210562 10.482 0C10.4944 0.10697 10.4995 0.213949 10.4995 0.320079V0.320089Z" fill="black"></path>
+</svg>
+
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="auth-form__separator">
+          <span class="auth-form__separator-label">or</span>
+        </div>
+
+        <div class="form__field form__field--text auth-form__input">
+          <div class="form__field-container">
+            <input placeholder="Email" class="form__input js-toggle-css-validation js-input-mobile js-modal-focus" type="email" name="login[email]" id="login-popup_login_email" />
+          </div>
+        </div>
+
+        <div class="form__field form__field--password auth-form__input">
+          <div class="form__field-container">
+            <input placeholder="Password" class="form__input" type="password" name="login[password]" id="login-popup_login_password" />
+          </div>
+        </div>
+
+        <input type="submit" name="commit" value="Log in with email" class="auth-form__submit button" disabled="disabled" />
+
+        <a class="auth-form__forgot-password" href="/en/nc/forgot_password">Forgot your password?</a>
+</form>
+      <div class="auth-form__terms-of-services">
+        By continuing you indicate that you've read and agree to our <a href='/en/tos' target='_blank'>Terms of Service</a> and <a href='/en/privacy' target='_blank'>Privacy Policy</a>.
+      </div>
+    </div>
+  </div>
+
+  <a class="auth-popup-form__footer auth-popup-form__toggle-form" data-modal-open-step="auth-popup:signup" href="#">You don&#39;t have an account?</a>
+</div>
+  </div>
+  <div data-modal-step="signup">
+    <div class="auth-popup-form auth-popup-form--signup js-input-mobile-container js-auth-popup-form">
+  <div class="auth-popup-form__container js-input-mobile-container">
+
+    <div class="auth-popup-form__header">
+      <h3 class="auth-popup-form__headline">
+        Sign up for Blinkist
+      </h3>
+      <div class="auth-popup-form__subheadline"></div>
+    </div>
+
+    <div class="auth-popup-form__body">
+      <div class="auth-form auth-form--signup">
+  <form class="form js-popup-signup-form" action="/en/nc/signup?origin=signup-popup" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="aUc9e2IjM7RlOK+7V3fG6WTL7Zd0dAazole95kkhDU1pd8LWm/wULmbJBh/48UhFxSvVsecu/oPNkxKc+05Htg==" />
+    <input type="hidden" name="signup[facebook_access_token]" id="signup-popup_signup_facebook_access_token" />
+    <input value="" type="hidden" name="signup[book_to_add]" id="signup-popup_signup_book_to_add" />
+    <input value="popup-20180828-signup_popup" type="hidden" name="signup[form_id]" id="signup-popup_signup_form_id" />
+
+    <div data-abtest="webtest-20190920-bw46_direct_fb_signup" data-abtest-group="show_fb_signup">
+      <a class="social-button social-button--facebook" data-action="facebook-login" data-action-url="#signup-popup_signup_facebook_access_token" href="#">
+        <span class="social-button__sprite">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="18" class="sprite sprite--auth-form sprite--facebook"><defs><path id="a" d="M4.667 18h4.666V0H0v18z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path d="M6.058 18V9.79H8.81l.412-3.2H6.058V4.547c0-.927.257-1.558 1.583-1.558l1.692-.001V.126A22.608 22.608 0 0 0 6.868 0c-2.44 0-4.11 1.491-4.11 4.23v2.36H0v3.2h2.759V18h3.3z" fill="#FEFEFE" mask="url(#b)"></path></g></svg>
+
+        </span>
+        <span class="social-button__label">
+          Sign up with Facebook
+        </span>
+</a>
+      <div class="auth-form__separator">
+        <span class="auth-form__separator-label">or</span>
+      </div>
+    </div>
+
+    <div class="form__field form__field--text auth-form__input">
+      <div class="form__field-container">
+        <input placeholder="Email" class="form__input" type="email" name="signup[email]" id="signup-popup_signup_email" />
+      </div>
+    </div>
+
+    <div class="form__field form__field--password auth-form__input">
+      <div class="form__field-container">
+        <input placeholder="Create password" class="form__input" type="password" name="signup[password]" id="signup-popup_signup_password" />
+        <button type="button" class="form__password-toggle password-toggle js-password-toggle">
+          <span class="password-toggle__label password-toggle__label--show">
+            Show
+          </span>
+          <span class="password-toggle__label password-toggle__label--hide">
+            Hide
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <input type="submit" name="commit" value="Create account" class="auth-form__submit button" disabled="disabled" />
+
+
+    <div class="auth-form__toggle-social-signup">
+      Or sign up with <a class="js-toggle-social-signup-list" href="#">your social account</a>
+    </div>
+
+    <div class="auth-form__social-signup-list">
+      <div class="auth-form__separator">
+      </div>
+
+      <a class="social-button social-button--facebook" data-action="facebook-login" data-action-url="#signup-popup_signup_facebook_access_token" href="#">
+        <span class="social-button__sprite">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="18" class="sprite sprite--auth-form sprite--facebook"><defs><path id="a" d="M4.667 18h4.666V0H0v18z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path d="M6.058 18V9.79H8.81l.412-3.2H6.058V4.547c0-.927.257-1.558 1.583-1.558l1.692-.001V.126A22.608 22.608 0 0 0 6.868 0c-2.44 0-4.11 1.491-4.11 4.23v2.36H0v3.2h2.759V18h3.3z" fill="#FEFEFE" mask="url(#b)"></path></g></svg>
+
+        </span>
+        <span class="social-button__label">
+          Sign up with Facebook
+        </span>
+</a>    </div>
+</form>
+
+  <div class="auth-form__terms-of-services">
+    By continuing you indicate that you've read and agree to our <a href='/en/tos' target='_blank'>Terms of Service</a> and <a href='/en/privacy' target='_blank'>Privacy Policy</a>.
+  </div>
+
+</div>
+    </div>
+  </div>
+
+  <a class="auth-popup-form__footer auth-popup-form__toggle-form" data-modal-open-step="auth-popup:login" href="#">Already have an account?</a>
+</div>
+  </div>
+
+</div>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  if (typeof dataLayer === "undefined") {
+    dataLayer = [];
+  }
+
+  var _paq = _paq || [];
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    track: function(params) {
+      if(this.proxyOn) {
+        _paq.push(params);
+      } else {
+        this.events.push(params);
+      }
+    },
+    trackEvent: function(params) {
+      params = ["trackEvent"].concat(params);
+
+      _paq.push(["deleteCustomVariable", 6, "page"]);
+
+      this.track(params);
+    },
+    trackBiEvent: function(params) {
+      var biEvent = ["body-20190207-bi_event", "1-fire"];
+      var biEventParams = ["trackEvent"].concat(biEvent);
+
+      _paq.push(["setCustomVariable", 6, "BIevent", JSON.stringify(params), "page"]);
+
+      this.track(biEventParams);
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  var abtests = [];
+</script>
+
+<script type="text/javascript">
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v3.js.gz');
+</script>
+
+    <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <script type="text/javascript">
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+  </script>
+
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5f70002f-fdab-4904-93f7-4b85795bca7f" type="text/javascript" data-culture="en" async></script>
+
+  <script type="text/javascript">
+  window.globals = {"book":{"bookTitle":"The Personal MBA","hasAudio":true},"facebookAppId":"499403336738590","configSupportedLanguages":["en","de"],"env":"production","AWSPiwikUrl":"//p.aws.blinkist.com/t","abtests":[],"airbrake":{"id":"190497","key":"1f5ae073a6a424eb4a0bf9106a63ccc6","fingerprint":"5e4a0c10d32d7a0014544b63"},"smartbanner":{"rating":{"ios":{"count":"16k","stars":4.7},"android":{"count":"27k","stars":4.3}}},"routes":{"library":"/en/nc/library","plans":"/en/nc/plans"},"promotionsUrl":"https://static.blinkist.com/promotions/promotions.json"};
+</script>
+
+</body>
+</html>
